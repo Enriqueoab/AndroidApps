@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Workout Plan</string>
+
+    <string-array name="muscles">
+        <item>Select muscle</item>
+        <item>Legs</item>
+        <item>Chest</item>
+        <item>Shoulders</item>
+        <item>Back</item>
+        <item>Biceps and triceps</item>
+    </string-array>
+
+    <string-array name="equipment">
+        <item>Select equipment</item>
+        <item>Bar</item>
+        <item>Dumbell</item>
+        <item>Machine</item>
+        <item>Disk</item>
+    </string-array>
+</resources>
