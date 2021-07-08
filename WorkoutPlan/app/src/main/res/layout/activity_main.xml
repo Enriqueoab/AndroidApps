@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="Choose your workout"
+        android:textColor="@color/teal_700"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+    <ImageButton
+        android:id="@+id/chestButton"
+        android:layout_width="169dp"
+        android:layout_height="162dp"
+        android:layout_below="@+id/backButton"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_toStartOf="@+id/legsButton"
+        android:layout_toLeftOf="@+id/legsButton"
+        android:onClick="openExercisesView"
+        app:srcCompat="@drawable/chest2" />
+
+    <ImageButton
+        android:id="@+id/shouldersButton"
+        android:layout_width="171dp"
+        android:layout_height="125dp"
+        android:layout_below="@+id/chestButton"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_toStartOf="@+id/legsButton"
+        android:layout_toLeftOf="@+id/legsButton"
+        android:onClick="openExercisesView"
+        app:srcCompat="@drawable/shoulder" />
+
+    <ImageButton
+        android:id="@+id/bicepsButton"
+        android:layout_width="158dp"
+        android:layout_height="164dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:onClick="openExercisesView"
+        app:srcCompat="@drawable/biceps" />
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="172dp"
+        android:layout_height="162dp"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_toStartOf="@+id/bicepsButton"
+        android:layout_toLeftOf="@+id/bicepsButton"
+        android:onClick="openExercisesView"
+        app:srcCompat="@drawable/back" />
+
+    <ImageButton
+        android:id="@+id/legsButton"
+        android:layout_width="157dp"
+        android:layout_height="160dp"
+        android:layout_below="@+id/bicepsButton"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:onClick="openExercisesView"
+        app:srcCompat="@drawable/legs" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="154dp"
+        android:layout_height="71dp"
+        android:layout_below="@+id/legsButton"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:onClick="openFormActivity"
+        android:scaleType="fitCenter"
+        android:tint="#009688"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+</RelativeLayout>
